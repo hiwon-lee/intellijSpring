@@ -13,7 +13,7 @@ public class MemoryMemberRepositoryTest {
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
     @AfterEach
-    public void afterEach() {
+    public void afterEach() {  // test가 끝날때마다 repository를 비우는 동작을 하는 함수
         repository.clearStore();
     }
     @Test
