@@ -28,7 +28,7 @@ class MemberServiceIntegrationTest {
     void 회원가입() throws Exception {
         // given : 무언가 주어졌을 때
         Member member = new Member();
-        member.setName("hello4dfsv");
+        member.setName("aaa");
 
         // when : 어느 때,경우에
         Long saveId = memberService.join(member);
@@ -43,10 +43,10 @@ class MemberServiceIntegrationTest {
     public void 중복_회원_예외() {
         // given
         Member member1 = new Member();
-        member1.setName("heewon");
+        member1.setName("bbb");
 
         Member member2 = new Member();
-        member2.setName("heewon");
+        member2.setName("bbb");
 
         // when
         memberService.join(member1);
